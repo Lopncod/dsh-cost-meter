@@ -1,0 +1,11 @@
+# Normalize to LF in the repository regardless of the working copy's platform,
+# so a Windows checkout and a Linux checkout of the same commit agree byte for byte.
+* text=auto eol=lf
+
+# Binary-ish assets
+*.png binary
+*.gif binary
+*.jpg binary
+*.webp binary
+*.wav binary
+*.mp3 binary

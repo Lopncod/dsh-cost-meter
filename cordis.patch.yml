@@ -1,0 +1,8 @@
+# @local/dsh-cost-meter —— DSH bundle patch
+#
+# 挂载声明：DSH 启动时按 bundle 层栈叠加各插件 patch，本文件把插件的宿主半
+# 插入当前 profile 的配置树。客户端半由 dsh-client-modules 依 package.json 的
+# dsh.client 声明自动提供服务，无需在这里写任何注入行。
+- insert:
+    - id: dsh-cost-meter
+      name: '@local/dsh-cost-meter'

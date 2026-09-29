@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Cost meter">
+  <rect x="4" y="10" width="56" height="44" rx="10" fill="none" stroke="#247bbf" stroke-width="4"/>
+  <path d="M16 22h32" stroke="#247bbf" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 26v18" stroke="#247bbf" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 30c-6 0-9 3-9 6s3 6 9 6 9 3 9 6-3 6-9 6" fill="none" stroke="#247bbf" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="50" cy="18" r="5" fill="#e0433f"/>
+</svg>

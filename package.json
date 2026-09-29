@@ -1,0 +1,57 @@
+{
+  "name": "@local/dsh-cost-meter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH plugin: a persistent per-answer / per-session cost pill under the composer, priced with the official DeepSeek peak/off-peak rates.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "author": "Lopncod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lopncod/dsh-cost-meter.git"
+  },
+  "homepage": "https://github.com/Lopncod/dsh-cost-meter#readme",
+  "bugs": {
+    "url": "https://github.com/Lopncod/dsh-cost-meter/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cost",
+    "token",
+    "usage"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/fold.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "license": "MIT"
+}
